@@ -32,6 +32,7 @@ class ChaosMCLobbyPlugin : JavaPlugin() {
         val pluginManager = server.pluginManager
         pluginManager.registerEvents(InventoryClickListener(), this)
         pluginManager.registerEvents(PlayerAdvancementCriterionGrantListener(), this)
+        pluginManager.registerEvents(PlayerElytraBoostListener(this), this)
         pluginManager.registerEvents(PlayerGameModeChangeListener(), this)
         pluginManager.registerEvents(PlayerInteractListener(this), this)
         pluginManager.registerEvents(PlayerItemDamageListener(), this)
@@ -40,7 +41,6 @@ class ChaosMCLobbyPlugin : JavaPlugin() {
         pluginManager.registerEvents(PlayerMoveListener(this), this)
         pluginManager.registerEvents(PlayerSwapHandItemsListener(), this)
         pluginManager.registerEvents(PlayerToggleFlightListener(), this)
-        pluginManager.registerEvents(ProjectileLaunchListener(), this)
     }
 
     internal fun resetPlayer(player: Player, teleport: Boolean, setGamemode: Boolean) {
