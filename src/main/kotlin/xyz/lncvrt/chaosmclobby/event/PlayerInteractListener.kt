@@ -13,7 +13,7 @@ import xyz.lncvrt.chaosmclobby.ChaosMCLobbyPlugin
 class PlayerInteractListener(val plugin: ChaosMCLobbyPlugin) : Listener {
     @EventHandler
     fun onPlayerInteractEvent(event: PlayerInteractEvent) {
-        if (event.getAction() !== Action.RIGHT_CLICK_AIR && event.getAction() !== Action.RIGHT_CLICK_BLOCK) {
+        if (event.action !== Action.RIGHT_CLICK_AIR && event.action !== Action.RIGHT_CLICK_BLOCK) {
             return
         }
 

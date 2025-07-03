@@ -32,7 +32,7 @@ class ChaosMCLobbyPlugin : JavaPlugin() {
         val pluginManager = server.pluginManager
         pluginManager.registerEvents(InventoryClickListener(), this)
         pluginManager.registerEvents(PlayerAdvancementCriterionGrantListener(), this)
-        pluginManager.registerEvents(PlayerGameModeChangeListener(this), this)
+        pluginManager.registerEvents(PlayerGameModeChangeListener(), this)
         pluginManager.registerEvents(PlayerInteractListener(this), this)
         pluginManager.registerEvents(PlayerItemDamageListener(), this)
         pluginManager.registerEvents(PlayerItemHeldListener(), this)
