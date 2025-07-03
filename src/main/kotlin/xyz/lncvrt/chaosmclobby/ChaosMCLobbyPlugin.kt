@@ -68,7 +68,7 @@ class ChaosMCLobbyPlugin : JavaPlugin() {
         fireworkItem.setItemMeta(fireworkMeta)
         player.inventory.setItem(7, fireworkItem)
 
-        player.health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH)?.value ?: 20.0
+        player.health = player.getAttribute(Attribute.MAX_HEALTH)?.value ?: 20.0
         player.foodLevel = 20
         player.saturation = 20f
         player.clearActivePotionEffects()
