@@ -10,7 +10,7 @@ pluginManagement {
 
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
-    id("org.sayandev.stickynote.settings") version "1.10.4.30"
+    id("org.sayandev.stickynote.settings") version "1.10.4.43"
 }
 
 rootProject.name = "ChaosMCLobby"
